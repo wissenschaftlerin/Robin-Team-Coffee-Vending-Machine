@@ -25,7 +25,7 @@
 
 # 🐦 Robin Takım Üyeleri
 
-## [Berra Beşer](https://www.linkedin.com/in/berra-beser/)
-## [Nergis Çolak](https://www.linkedin.com/in/nergiscolak/)
-## [Mustafa Tekfidan](https://www.linkedin.com/in/mustafatekfidan/)
-## [Zeynep Feyza ATABEY](https://www.linkedin.com/in/zeynepfeyzatabey/)
+## - [Berra Beşer](https://www.linkedin.com/in/berra-beser/)
+## - [Nergis Çolak](https://www.linkedin.com/in/nergiscolak/)
+## - [Mustafa Tekfidan](https://www.linkedin.com/in/mustafatekfidan/)
+## - [Zeynep Feyza ATABEY](https://www.linkedin.com/in/zeynepfeyzatabey/)
