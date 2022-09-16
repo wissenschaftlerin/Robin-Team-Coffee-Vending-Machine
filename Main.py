@@ -1,19 +1,23 @@
 import time
+import random
 
 print("☕ Robin Coffee Venduring Machine ☕")
 
-#from IPython.display import Image
-#Image('/content/Machine.png')
-
-#from PIL import Image
-#im = Image.open("/content/Machine.png")
-#im.show()
-
 from IPython.display import Image, display
 
+# Makine Resmi
 machine = "/content/Machine.png"
-display(Image(data=machine, width=200, height=200))
 
+# Kahve Resimleri
+espresso = "/content/Espresso.png"
+cappucino = "/content/Cappucino.png"
+filter_coffee = "/content/Filtre Kahve.png"
+mocha = "/content/Mocha.png"
+flat_white = "/content/Flat White.png"
+latte = "/content/Latte.png"
+special_coffee = "/content/Special Robin Coffee.png"
+
+display(Image(data=machine, width=350, height=400))
    
 kahve_menu = {
     "Espresso": 19,
@@ -38,22 +42,21 @@ class Otomat():
         else:
             self.durum = "KAPALI"
             print("Otomat açılacak.")
-					  
-						
-def close(self):
+					  						
+ def close(self):
         if(self.durum == "KAPALI"):
             print("Otomat kapalı.")
         else:
             self.durum = "KAPALI"
             print("Otomat kapanacak.")
 
-def menu_goruntuleme():
+ def menu_goruntuleme():
           print("-----Robin-Coffee-Menü-------")
         
-for item in list(kahve_menu.keys()):
+ for item in list(kahve_menu.keys()):
           print(f"{item.upper():<10} : {kahve_menu[item]} ₺")
 
-def fiyat_hesaplama(kahve,sayı):
+ def fiyat_hesaplama(kahve,sayı):
       assert sayı >= 0 , "Seçim sayınız 0 ve 0'dan küçük olmamalıdır."
 
       if kahve not in list(kahve_menu.keys()):
@@ -61,22 +64,42 @@ def fiyat_hesaplama(kahve,sayı):
       else:
          return kahve_menu[kahve] * sayı
 
-def kahve_secim():
-  menu_goruntuleme()
-  print("İstediğiniz kahveyi giriniz. Çıkış yapmak için '0'ı tuşlayınız.")
+ def miktar():
+    seker_miktarı = input("Kahvenize ne kadar şeker eklemek istersiniz? ")
+    shot_miktarı = input("Kahvenize ne kadar shot espresso eklemek istersiniz? ")
+    sut_miktarı = input("Kahvenize ne kadar ml süt eklemek istersiniz? ")
 
-  secilen_kahveler = []
-  secim_sayısı = []
+ def sıcaklık():
+    secim = input("Kahvenizi soğuk mu sıcak mı istersiniz? ")
+    if secim == soguk:
+        print("Kahvenize buz ekleniyor..")
+    elif secim == sıcak:
+        print("Kahveniz sıcacık hazırlanıyor..")
 
-  odenecek_fiyat = 0
+ def icim():
+    tercih = input("Kahveniz yumuşak içim olsun ister misiniz (+5 TL)? ")
+    if tercih == evet:
+        print("Kahveniz yumuşak içimli hazırlanıyor..")
+        fiyat =+5
+    else:
+        pass
 
-  while 1:
-    secilen_urun = input("Kahve ismini giriniz: ")
-    if secilen_urun == "0":
+ def kahve_secim():
+    menu_goruntuleme()
+    print("İstediğiniz kahveyi giriniz. Çıkış yapmak için '0'ı tuşlayınız.")
+
+secilen_kahveler = []
+secim_sayısı = []
+
+odenecek_fiyat = 0
+
+while 1:
+    secilen_kahve = input("Kahve ismini giriniz: ")
+    if secilen_kahve == "0":
       print("Fiş kaydedilip ödenecek tutar hesaplanıyor...")
       break
-    secim_sayısı = int(input(f"{secilen_urun}'den kaç tane istiyorsunuz? "))
-    fiyat = fiyat_hesaplama(secilen_urun,secim_sayısı)
+    secim_sayısı = int(input(f"{secilen_kahve}'den kaç tane istiyorsunuz? "))
+    fiyat = fiyat_hesaplama(secilen_kahve,secim_sayısı)
     if fiyat is None:
       print(" Kahve seçildi, başka kahve istiyorsanız giriniz..")
     else:
@@ -86,14 +109,14 @@ def kahve_secim():
         print("Onaylandı.")
         print("-"*40)
         odenecek_fiyat += fiyat
-        secilen_kahveler.append(secilen_urun)
+        secilen_kahveler.append(secilen_kahve)
         print(f"Ara Toplam: {odenecek_fiyat} ₺")
       elif kontrol == "hayır":
         print("Satın alma iptal edildi.")
         print("-"*40)
-
+ 		       
   return odenecek_fiyat , secilen_kahve , secim_sayısı
-
+    
 def main():
 
     otomat = Otomat()
@@ -106,7 +129,7 @@ def main():
         4. Kahve Ekle
         5. Şeker/Shot/Süt Miktarı Değiştir (Ekle/Kaldır)
         6. Soğuk/Sıcak Ayarı
-        7. Şeker/Yumuşak İçim Ayarı
+        7. Yumuşak/Sert İçim Ayarı
         8. Çıkış
         """)
 
@@ -146,7 +169,7 @@ def main():
 
 
 def Kahve_Makinesi():
-  print("-----Robin Kahve Otomatına Hoş Geldiniz!-------\nMenüyü görmek için '1'e, Kahve siparişini değiştirmek için '2'ye basınız.\n Otomattan çıkmak için : '0'a basınız.")
+  print("-----Robin Kahve Otomatına Hoş Geldiniz!-------\nMenüyü görmek için '1'e, Kahve siparişi vermek için için '2'ye basınız.\n Otomattan çıkmak için : '0'a basınız.")
   akıs = None
   while 1:
     print("--------------------------------------------------------------------")
@@ -166,10 +189,10 @@ def Kahve_Makinesi():
         pass
       else:
         print("-------------------------------------------------------")
-        print("|                                                      |")
+        print("|                      KASA                            |")
         print(f"     Ödemeniz gereken tutar {odenecek_fiyat} ₺'dir.")
         print("|                                                      |")
-        print("\n  Sağlıklı güzel günler dileriz.\n   Bizi Tercih Ettiğiniz İçin Teşekkürler!\n  ----------------Afiyet Olsun!-------------")
+        print("\nGüzel günler dileriz.\n   Bizi Tercih Ettiğiniz İçin Teşekkürler!\n  ----------------Afiyet Olsun!-------------")
         print("|                                                      |")
         print("-------------------------------------------------------")
         break
