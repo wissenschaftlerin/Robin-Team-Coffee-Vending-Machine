@@ -1,9 +1,13 @@
-# Robin Team Coffee Vending Machine
+# <h1 align="center">Robin Team Coffee Vending Machine</h1>
 
- ![Siyah Beyaz Tasarım Stüdyosu Logo (3)](https://user-images.githubusercontent.com/72699045/190245807-cfb0a532-c716-4507-845d-9c43c5163790.png)
-
+<div align="center"><img src="https://user-images.githubusercontent.com/72699045/190245807-cfb0a532-c716-4507-845d-9c43c5163790.png" alt="logo" /></div>
+<h3 align="center"> Takım Logomuz </h3>
 
 [Yetkin Gençler](https://github.com/yetkingencler/YetGenJumpPythonFinalProjeListesi/) Jump Python Eğitim Programı çerçevesinde Robin (#Takım2) Takımı Kahve Otomatı projesidir.
+ 
+### <h2 align="center">☕ Kahve Makinemiz ☕</h1> 
+<div align="center"><img src="https://user-images.githubusercontent.com/72699045/190623029-1dc6c162-08cf-46d7-9a4f-5904fd606721.png" alt="coffemachine" /></div>
+
 
 ## Kahve Çeşitlerimiz (Menü)
 
@@ -13,6 +17,20 @@
 
 ### Cappuccino
 ![Coffee](https://user-images.githubusercontent.com/72699045/190557137-33a64a3c-f794-4b2b-b5cc-4d66a6678a0f.png)
+
+### Espresso
+![Espresso](https://user-images.githubusercontent.com/72699045/190622239-bdecf801-79ec-4576-b0e5-57568fdd64aa.png)
+
+### Latte
+![Latte](https://user-images.githubusercontent.com/72699045/190622426-aff213a3-e258-4abc-a9f7-04ec8e0dc76d.png)
+
+### Mocha 
+![Mocha](https://user-images.githubusercontent.com/72699045/190622307-8b7dbdf0-a2e1-4397-89c4-8d4b74cdafbe.png)
+
+### Flat White
+![Flat White](https://user-images.githubusercontent.com/72699045/190622379-9bc4a5d3-118f-4b93-bc61-d253dadab525.png)
+
+### Filtre Kahve
 
 
 
