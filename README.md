@@ -36,7 +36,7 @@
 ## Çalışma Zamanı Görüntüsü
 ![kod çalıştırma](https://user-images.githubusercontent.com/72699045/192152959-eb18ceef-1702-412d-8cb3-317252937037.png)
 
-# Proje Tanıtım Videomuz
+# [Proje Tanıtım Videomuz](https://youtu.be/cWpQ8XmbEq4)
 
 ## Proje Beklentileri
 ### Proje 1 - Kahve Otomatı
